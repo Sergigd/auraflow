@@ -7,3 +7,6 @@ h2 { font-size: 1.2rem; margin-top: 2rem; }
 .lead { color: var(--muted); margin-top: 0; }
 a { color: var(--link); }
 code { font-size: .9em; }
+.yt { display: flex; gap: .6rem; align-items: flex-start; }
+.yt-badge { flex: none; margin-top: .2rem; }
+.links { margin-top: 2rem; font-weight: 600; }
