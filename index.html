@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AuraFlow Publisher</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>AuraFlow Publisher</h1>
+<p class="lead">A personal publishing tool for the <a href="https://www.youtube.com/@auraflowailabs">AuraFlow AI</a> YouTube channel.</p>
+
+<h2>What it is</h2>
+<p>AuraFlow Publisher is a private command-line tool written and used by a single independent developer,
+the owner of the AuraFlow AI channel. It runs only on the developer's own computer and acts only on that one
+channel. It is not distributed, sold or offered to anyone else, and it has no web interface or user accounts.</p>
+
+<h2>What it does</h2>
+<ol>
+<li>Reads a finished music album prepared locally: audio tracks, cover art and a text file with titles and descriptions.</li>
+<li>Renders one video per track and one full-length mix with chapters.</li>
+<li>Uses the YouTube Data API v3, authorised with OAuth 2.0 by the channel owner, to:
+  <ul>
+  <li>upload those videos to the AuraFlow AI channel (<code>videos.insert</code>),</li>
+  <li>set their thumbnails and update titles, descriptions and privacy (<code>thumbnails.set</code>, <code>videos.update</code>),</li>
+  <li>create and organise the channel's playlists (<code>playlists.*</code>, <code>playlistItems.*</code>),</li>
+  <li>read the authorised channel's own basic details (<code>channels.list</code>).</li>
+  </ul>
+</li>
+</ol>
+
+<h2>What it does not do</h2>
+<ul>
+<li>It does not access, store or analyse data from other channels or other users.</li>
+<li>It does not display or embed YouTube content anywhere.</li>
+<li>It does not show ads or charge for anything.</li>
+</ul>
+
+<p><a href="privacy.html">Privacy policy</a></p>
+</main>
+</body>
+</html>
